@@ -1,0 +1,46 @@
+﻿<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Name>CS602_HW5_Fratangeli</Name>
+    <ProjectGuid>82e3e488-7ab8-47a3-912e-1141094e9d30</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>
+    </RootNamespace>
+    <ProjectTypeGuids>{A0786B88-2ADB-4C21-ABE8-AA2D79766269}</ProjectTypeGuids>
+    <AssemblyName>CS602_HW5_Fratangeli</AssemblyName>
+    <SpecificPageValue>index.php</SpecificPageValue>
+    <StartAction>SpecificPage</StartAction>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <IncludeDebugInformation>true</IncludeDebugInformation>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <IncludeDebugInformation>false</IncludeDebugInformation>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="delete_student.php" />
+    <Compile Include="add_student.php" />
+    <Compile Include="add_student_form.php" />
+    <Compile Include="add_course.php" />
+    <Compile Include="database_error.php" />
+    <Compile Include="home_view.php" />
+    <Compile Include="course_list.php" />
+    <Compile Include="index.php" />
+    <Compile Include="main.php" />
+    <Compile Include="model\courses_db.php" />
+    <Compile Include="model\database.php" />
+    <Compile Include="model\product_db.php" />
+    <Compile Include="view\footer.php" />
+    <Compile Include="view\header.php" />
+    <Compile Include="view\product.php" />
+    <Compile Include="view\sidebar.php" />
+    <Compile Include="view\sidebar_admin.php" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="main.css" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="model\" />
+    <Folder Include="view\" />
+  </ItemGroup>
+</Project>
